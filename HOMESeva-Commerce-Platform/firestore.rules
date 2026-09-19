@@ -1,0 +1,60 @@
+rules_version = '2';
+
+// Allow read access to all users
+match /{document=**} {
+  allow read: if true;
+}
+
+// Allow write access only to authenticated users
+match /users/{userId} {
+  allow write: if request.auth != null && request.auth.uid == userId;
+}
+
+// Allow read and write access to the user's addresses
+match /users/{userId}/addresses/{addressId} {
+  allow read, write: if request.auth != null && request.auth.uid == userId;
+}
+
+// Allow read and write access to the user's notifications
+match /users/{userId}/notifications/{notificationId} {
+  allow read, write: if request.auth != null && request.auth.uid == userId;
+}
+
+// Allow read access to categories and catalog items
+match /categories/{categoryId} {
+  allow read: if true;
+}
+
+match /catalogItems/{itemId} {
+  allow read: if true;
+}
+
+// Allow write access to catalog items only for admins
+match /catalogItems/{itemId} {
+  allow write: if request.auth != null && request.auth.token.admin == true;
+}
+
+// Allow read and write access to orders only for the user who owns the order
+match /orders/{orderId} {
+  allow read, write: if request.auth != null && request.auth.token.customerId == resource.data.customerId;
+}
+
+// Allow read access to invoices only for the user who owns the invoice
+match /invoices/{invoiceId} {
+  allow read: if request.auth != null && request.auth.token.customerId == resource.data.customerId;
+}
+
+// Allow write access to invoices only for admins
+match /invoices/{invoiceId} {
+  allow write: if request.auth != null && request.auth.token.admin == true;
+}
+
+// Allow read access to coupons
+match /coupons/{couponId} {
+  allow read: if true;
+}
+
+// Allow write access to coupons only for admins
+match /coupons/{couponId} {
+  allow write: if request.auth != null && request.auth.token.admin == true;
+}

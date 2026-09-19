@@ -1,0 +1,16 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "Configuration package for HOMESeva Commerce Platform",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.2"
+  }
+}

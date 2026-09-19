@@ -1,0 +1,10 @@
+packages:
+  - apps/customer
+  - apps/admin
+  - apps/functions
+  - packages/domain
+  - packages/firebase
+  - packages/ui
+  - packages/config
+  - packages/i18n
+  - packages/testing

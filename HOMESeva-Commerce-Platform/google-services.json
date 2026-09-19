@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "915461559545",
+    "project_id": "homeseva-ecome",
+    "storage_bucket": "homeseva-ecome.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915461559545:android:67ffb8610bf27d051a3e28",
+        "android_client_info": {
+          "package_name": "com.odonlinehomeseva.ecome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgzYaPXNweRcFa09I34f6PO2fN_BJkRXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

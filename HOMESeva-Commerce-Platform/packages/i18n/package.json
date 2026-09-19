@@ -1,0 +1,21 @@
+{
+  "name": "i18n",
+  "version": "1.0.0",
+  "description": "Internationalization package for HOMESeva Commerce Platform",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "i18next": "^21.6.0",
+    "i18next-http-backend": "^1.3.1",
+    "i18next-browser-languagedetector": "^6.1.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.0.7"
+  },
+  "license": "MIT"
+}

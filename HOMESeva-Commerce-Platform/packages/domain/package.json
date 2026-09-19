@@ -1,0 +1,22 @@
+{
+  "name": "domain",
+  "version": "1.0.0",
+  "description": "Domain models and business logic for the HOMESeva Commerce Platform.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "domain",
+    "business logic",
+    "models"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "jest": "^26.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Testing utilities and helpers for the HOMESeva Commerce Platform.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^0.0.0",
+    "react-testing-library": "^0.0.0",
+    "playwright": "^0.0.0"
+  },
+  "keywords": [
+    "testing",
+    "utilities",
+    "helpers"
+  ],
+  "author": "HOMESeva Team",
+  "license": "MIT"
+}
